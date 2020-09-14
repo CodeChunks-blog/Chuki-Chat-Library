@@ -16,10 +16,7 @@ function listent() {
 
   }
 
-
   //console.log("clicked");
-
-
 
 }
 
