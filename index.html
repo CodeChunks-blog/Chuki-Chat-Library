@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+  <script src="https://raw.githack.com/IDMNYU/p5.js-speech/master/lib/p5.speech.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="screen shadow" id="txtScreen">
+<!-- 
+      <div class="container">
+        <img src="chukki.png" alt="Avatar" style="width:100%;">
+        <p>Hello. How are you today?</p>
+        <span class="time-right">11:00</span>
+      </div>
+
+      <div class="container user">
+        <img src="user.webp" alt="Avatar" class="right" style="width:100%;">
+        <p class="right-txt">Hey! I'm fine. Thanks for asking!</p>
+        <span class="time-left">11:01</span>
+      </div>
+
+-->
+
+    </div>
+    <div class="container input-box">
+      <input style="border:none" type="text" id="msg" placeholder="Type message here...">
+      <button id="submit"  class="button" onclick="send()">Send</button>
+    </div>
+    
+    <div class="voice">
+      <input type="image" id="voice2" class="Voicebutton" onclick="listent()" src="mic.jpg">
+      </div> 
+    
+  </div>  
+  <script src="sketch.js"></script>
+  <script src="https://raw.githack.com/iamashwin99/Chukki-Chat-Library/master/CClib.js"></script>
+  <script src="CC.js"></script>
+</body>
+
+</html>
