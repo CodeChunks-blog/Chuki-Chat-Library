@@ -47,7 +47,7 @@ function sendMessage(msg) {
   if (msg != "") {
 
     setTimeout(() => {
-      let reply = createDiv('<img src="chukki.png" alt="Avatar" style="width:100%;"><p>' + msg + '</p><span class="time-right">' + getTime() + '</span>').addClass("container");
+      let reply = createDiv('<img src="https://raw.githubusercontent.com/iamashwin99/Chukki-Chat-Library/master/chukki.png" alt="Avatar" style="width:100%;"><p>' + msg + '</p><span class="time-right">' + getTime() + '</span>').addClass("container");
       reply.parent("txtScreen");
 
       select("#msg").value("");
