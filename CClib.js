@@ -47,7 +47,7 @@ function sendMessage(msg) {
   if (msg != "") {
 
     setTimeout(() => {
-      let reply = createDiv('<img src="https://raw.githubusercontent.com/iamashwin99/Chukki-Chat-Library/master/chukki.png" alt="Avatar" style="width:100%;"><p>' + msg + '</p><span class="time-right">' + getTime() + '</span>').addClass("container"); 
+      let reply = createDiv('<img src="https://raw.githack.com/iamashwin99/Chukki-Chat-Library/master/chukki.webp" alt="Avatar" style="width:100%;"><p>' + msg + '</p><span class="time-right">' + getTime() + '</span>').addClass("container"); 
       reply.parent("txtScreen");
 
       select("#msg").value("");
@@ -62,7 +62,7 @@ function sendMessage(msg) {
 
 function sendUserMessage(msg) {
   msg = escape(msg);
-  let div = createDiv('<img src="user.webp" alt="Avatar" class="right" style="width:100%;"><p class="right-txt">' + msg + '</p><span class="time-left">' + getTime() + '</span>').addClass("container").addClass("user");
+  let div = createDiv('<img src="https://raw.githack.com/iamashwin99/Chukki-Chat-Library/master/user.webp" alt="Avatar" class="right" style="width:100%;"><p class="right-txt">' + msg + '</p><span class="time-left">' + getTime() + '</span>').addClass("container").addClass("user");
   div.parent("txtScreen");
   let objDiv = document.getElementById("txtScreen");
   objDiv.scrollTop = objDiv.scrollHeight;
