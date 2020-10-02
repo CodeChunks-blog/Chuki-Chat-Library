@@ -78,7 +78,7 @@ canvas {
 }
 
 .screen {
-  width: 70%;
+  width: 95%;
   height: 80%;
   overflow: auto;
   padding: 10px;
@@ -92,7 +92,7 @@ canvas {
 .shadow {
   -moz-box-shadow: inset 0 0 5px #000000;
   -webkit-box-shadow: inset 0 0 5px #000000;
-  box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 5px #000000;
 }
 
 .center {
@@ -100,6 +100,14 @@ canvas {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.chat_imgR {
+  float: right;
+  width: 11%;
+}
+.chat_imgL {
+  float: left;
+  width: 11%;
 }
 
 .content {
@@ -110,20 +118,47 @@ canvas {
 }
 
 .container {
-  box-shadow: 0 0 2px #000000;
-  border: 2px solid #dedede;
-  background-color: #ffffff;
-  border-radius: 25px;
-  padding-left: 10px;
-  margin: 15px 0;
-  
-  width: 75%;
+  width: 60%;
+  margin: 50px auto;
+  background: #00bfb6;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position:relative;
 }
 
 .right-txt {
-  /*   text-align:right; */
+    text-align:right;
 }
-
+.left-txt {
+    text-align:left;
+}
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #00bfb6;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  right: -20px;
+  top: 20px;
+}
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #00bfb6;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  left: -20px;
+  top: 20px;
+}
 .user {
   /*float: right;*/
   border-color: #ccc;
@@ -154,14 +189,14 @@ canvas {
 
 .time-right {
   float: right;
-  color: #aaa;
+  color: #AFF;
   font-size: 10px;
   padding-right: 15px;
 }
 
 .time-left {
   float: left;
-  color: #999;
+  color: #AFF;
   font-size: 10px;
   padding-right: 15px;
 }
