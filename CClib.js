@@ -49,7 +49,7 @@ function sendMessage(msg) {
   if (msg != "") {
 
     setTimeout(() => {
-      let reply = createDiv('<div class="chat_imgL"><img src="https://iamashwin99.github.io/Chuki-Chat-Library/Chuki.webp" alt="Avatar" class="right" style="width:100%;"></div><div class="container sb2"><p class="left-txt">'+msg+'</p><span class="time-right">'+ getTime() +'</span></div></div>'); 
+      let reply = createDiv('<div class="chat_imgL"><img src="https://codechunks-blog.github.io/Chuki-Chat-Library/Chuki.webp" alt="Avatar" class="right" style="width:100%;"></div><div class="container sb2 "><p class="left-txt">'+msg+'</p><span class="time-right">'+ getTime() +'</span></div></div>'); 
       reply.parent("txtScreen");
 
       select("#msg").value("");
@@ -64,7 +64,7 @@ function sendMessage(msg) {
 
 function sendUserMessage(msg) {
   msg = escape(msg);
-  let div = createDiv('<div class="chat_imgR"><img src="https://iamashwin99.github.io/Chuki-Chat-Library/user.webp" alt="Avatar" class="right" style="width:100%;"></div><div class="container sb1"><p class="right-txt">'+msg+'</p><span class="time-left">'+ getTime() +'</span></div></div>');
+  let div = createDiv('<div class="chat_imgR"><img src="https://codechunks-blog.github.io/Chuki-Chat-Library/user.webp" alt="Avatar" class="right" style="width:100%;"></div><div class="container sb1"><p class="right-txt">'+msg+'</p><span class="time-left">'+ getTime() +'</span></div></div>');
   div.parent("txtScreen");  
   let objDiv = document.getElementById("txtScreen");
   objDiv.scrollTop = objDiv.scrollHeight;

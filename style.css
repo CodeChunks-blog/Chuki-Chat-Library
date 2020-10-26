@@ -59,7 +59,7 @@ canvas {
   position: relative;
   /*top: 50%;*/
   left: 45%;
-  /*transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
 
 }
 
@@ -127,6 +127,7 @@ canvas {
   color: #fff;
   font-family: arial;
   position:relative;
+  
 }
 
 .right-txt {
@@ -171,20 +172,6 @@ canvas {
   content: "";
   clear: both;
   display: table;
-}
-
-.container img {
-  float: left;
-  max-width: 60px;
-  width: 100%;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-.container img.right {
-  float: right;
-  margin-left: 20px;
-  margin-right: 0;
 }
 
 .time-right {
